@@ -39,13 +39,13 @@ function draw(){
         centuries.stop();
 
         if(song_status_leftWrist == false){
-            centuries.stop();
             believer.play();
             document.getElementById("song_name_label").innerHTML = "Now Playing : Believer";
         }
     }
+    
 
-    if(rightWristScore > 0.4){
+    if(rightWristScore > 0.2){
         circle(right_wrist_x,right_wrist_y,20);
         believer.stop();
 
@@ -54,6 +54,7 @@ function draw(){
             document.getElementById("song_name_label").innerHTML = "Now Playing : Iron Man - Centuries";
         }
     }
+    
     
     
 
